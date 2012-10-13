@@ -1,0 +1,22 @@
+---
+comments: true
+date: 2012-10-13 11:32:32
+layout: post
+slug: 从wordpress换到octopress
+title: 从wordpress换到octopress
+categories:
+- balala
+tags:
+- octopress
+- vps
+---
+
+原本只是准备把部署在虚拟主机上的博客，换到最近买的[linode](http://www.linode.com/)的vps上来，换过来之后觉得原来的主题太简陋，又开始给wordpress换主题。主题找了一圈也没有太满意的，最后干脆把wordpress换成了一直很喜欢的[octopress](http://octopress.org/)。经过一番折腾 ，博客的家变了，装修变了，家具也给换了， 没变的只有那几篇文章了。
+
+## linode vps
+原来的虚拟主机是国内的一家主机商，价格够便宜，访问速度也是够慢，而且经常出现无法访问的情况，每次电话过去问客服，都说正在被DDOS。这两天没那么忙，就决定找个vps，把博客换过去。网上很多对比各种vps的文章，最后选择了linode，刚好女朋友最近才办了招行的信用卡，用它付款非常方便。根据大家的测评，选择了东京的IDC。到目前为止，感觉还不错，ssh速度和网页访问速度都很稳定。
+
+## octopress
+octopress与wordpress有很大的区别，系统是用ruby写的，内容以静态HTML的方式发布，mysql也不需要了。不仅访问速度有很大提升，对于vps这种系统资源很紧张的设施，节省系统开销也是很重要的。原来我在vps上把apache，mysql，fastcgi-php都跑起来后，没有访问压力的情况下也需要占用200-300M的内存，现在整个blog只需要跑一个nginx， 占用的内存还不到100M。从[wordpress迁移到octopress](http://blog.dayanjia.com/2012/04/migration-to-octopress-from-wordpress/)的介绍也很多，我用了一个[exitwp](https://github.com/thomasf/exitwp)的工具，过程很简单，不过迁移过来后，原来文章的格式需要一些调整。   
+
+迁移到octopress之后，最大的变化是写文章的方式。我原来都是在evernote上面写，然后在wordpress上调html的样式。octopress是基于[jekyll](http://jekyllrb.com/)支持markdown语法，我现在都是在sublime-text 2上面按照markdown的语法写文章，然后通过rake generate生成html文件,省去了原来调html的麻烦。sublime-text 2有两个插件，markdown preview,smart markdown可以帮助提高写markdown文件的便利性，目前还在熟悉markdown的语法，这篇文章文章就是按照markdown语法写的，写起文章来就像写代码，感觉很爽。
