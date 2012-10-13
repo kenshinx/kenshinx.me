@@ -20,3 +20,5 @@ tags:
 octopress与wordpress有很大的区别，系统是用ruby写的，内容以静态HTML的方式发布，mysql也不需要了。不仅访问速度有很大提升，对于vps这种系统资源很紧张的设施，节省系统开销也是很重要的。原来我在vps上把apache，mysql，fastcgi-php都跑起来后，没有访问压力的情况下也需要占用200-300M的内存，现在整个blog只需要跑一个nginx， 占用的内存还不到100M。从[wordpress迁移到octopress](http://blog.dayanjia.com/2012/04/migration-to-octopress-from-wordpress/)的介绍也很多，我用了一个[exitwp](https://github.com/thomasf/exitwp)的工具，过程很简单，不过迁移过来后，原来文章的格式需要一些调整。   
 
 迁移到octopress之后，最大的变化是写文章的方式。我原来都是在evernote上面写，然后在wordpress上调html的样式。octopress是基于[jekyll](http://jekyllrb.com/)支持markdown语法，我现在都是在sublime-text 2上面按照markdown的语法写文章，然后通过rake generate生成html文件,省去了原来调html的麻烦。sublime-text 2有两个插件，markdown preview,smart markdown可以帮助提高写markdown文件的便利性，目前还在熟悉markdown的语法，这篇文章文章就是按照markdown语法写的，写起文章来就像写代码，感觉很爽。
+
+备份上相比之前既要备份数据库又要备份代码，现在每次更新文章后直接push到[github](https://github.com/kenshinx/kenshinx.me)上保存，非常方便。
