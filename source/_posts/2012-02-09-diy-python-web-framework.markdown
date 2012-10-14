@@ -34,6 +34,8 @@ selector的风格也有点类django,可以根据URL选择一个wsgi application�
 
 webob可以理解成是实现了wsgi相关应用的模块，核心包括对request，response,http header,cookie等的处理，并且这些实现完全遵守wsgi规范 。[Pyramid](https://www.pylonsproject.org/),[Pylons](https://www.pylonsproject.org/projects/pylons-framework/about),[TurboGears](http://turbogears.org/)等都是基于此。类似的有werkzeug，flask和uliweb就使用了werkzeug。
 
+<!-- more -->
+
 上面几个核心组件放在一起，就可以搭出一个简单的web framework。具体这几个东西怎么搭，大概如下：
 
 [![](http://www.kenshinx.me/wp-content/uploads/2012/02/framework.png)](python framework)

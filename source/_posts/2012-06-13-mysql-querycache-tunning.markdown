@@ -40,6 +40,8 @@ tags:
 
 * query_cache_wlock_invalidate：针对于MyISAM 存储引擎，设置当有WRITE LOCK 在某个Table 上面的时候，读请求是要等待WRITE LOCK 释放资源之后再查询还是允许直接从QueryCache 中读取结果，默认为FALSE（可以直接从Query Cache 中取得结果）。
 
+<!-- more -->
+
 ****
 
 下面的命令可以查看query cache工作状态，缓存命中率是否理想，有没有必要调大query_cache_size或缩小query_cache_min_res_unit等指标，通过下面一组数字都可以分析出来。

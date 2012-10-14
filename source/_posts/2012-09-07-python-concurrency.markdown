@@ -55,7 +55,7 @@ tags:
 
 实验代码：[https://github.com/kenshinx/concurrency](https://github.com/kenshinx/concurrency)
 
-
+<!-- more -->
 
 代码都比较简单，不过在实现stackless版本时犯了一个错误，要利用协程的优点，在并发的地方必须是非阻塞式，而我直接用urllib2来下载网页，urllib2是阻塞式IO，因此没有实现想要的并发效果，最后下载完成的时间跟单线程一样。下面是反面代码：
 

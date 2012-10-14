@@ -26,6 +26,7 @@ Django提供了多个粒度的服务器端缓存实现，包括对整个站点�
 
 UpdateCacheMiddleware负责更新cache，当满足下面几个条件时，它就会把当前Response内容存到cache中。
 
+<!-- more -->
 	
 1. 当前Response不在cache中
 	

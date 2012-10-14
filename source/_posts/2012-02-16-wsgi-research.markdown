@@ -31,6 +31,8 @@ wsgi 是一个 web 组件的接口规范.，wsgi将 web 组件分为三类： we
 wsgi server可以理解为一个符合wsgi规范的webserver，接收request请求，封装一系列环境变量，按照wsgi规范调用注册的wsgi app，最后将response返回给客户端。  
 文字很难解释清楚wsgi server到底是什么东西，以及做些什么事情，最直观的方式还是看wsgiserver的实现代码。以python自带的wsgiref为例，wsgiref是按照wsgi规范实现的一个简单wsgiserver。它的代码也不复杂，下图是我读wsgiref代码后整理的。
 
+<!-- more -->
+
 [![](http://www.kenshinx.me/wp-content/uploads/2012/02/wsgiref.png)](http://www.kenshinx.me/wp-content/uploads/2012/02/wsgiref.png)
 
 通过这个图可以看出来wsgi server 基本工作流程
