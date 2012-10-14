@@ -17,7 +17,6 @@ tags:
 
 CSRF的防护通常有两种方式，一个是通过Challenge-Response的方式，例如通过Captcha和重新输入密码等方式来验证请求是否伪造，但这会影响用户体验，类似银行付款会采用这样的方式。另一种是通过随机Token的方式，多数Web系统都会采用这种方式，Django也是用的这种。下面具体描述Django的实现步骤，大多数基于Token的CSRF防护系统都是类似的流程。
 
-<!-- more -->
 
 	
   1. 如果有form在提交时需要验证token，那么django在打开这个页面时就会在用户的cookie中插入csrftoken记录，csrftoken的生成方式：
@@ -49,15 +48,11 @@ CSRF的防护通常有两种方式，一个是通过Challenge-Response的方式�
 
 
     
-    <input?type="hidden"? value="4dc3a02f858e4bd54b57" name="csrfoken">
+    <input type="hidden" value="4dc3a02f858e4bd54b57" name="csrfoken">
 
 
 
 3. 服务器端接到POST请求时，会验证提交的Token和用户cookie中的Token值是否一致，如不一致就返回403错误。
-
-
-
-
 
 
 
