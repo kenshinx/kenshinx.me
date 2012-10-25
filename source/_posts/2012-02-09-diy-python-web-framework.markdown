@@ -38,7 +38,7 @@ webob可以理解成是实现了wsgi相关应用的模块，核心包括对reque
 
 上面几个核心组件放在一起，就可以搭出一个简单的web framework。具体这几个东西怎么搭，大概如下：
 
-[![](http://www.kenshinx.me/wp-content/uploads/2012/02/framework.png)](python framework)
+[![](http://pic.yupoo.com/xiha211/CmMcP3UF/medish.jpg)](http://pic.yupoo.com/xiha211/CmMcP3UF/medish.jpg)
 
 整个框架还是以wsgi为基础，通过wsgi将各个组件粘合起来，有点类似pylons的感觉。
 
