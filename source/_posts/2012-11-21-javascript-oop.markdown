@@ -8,12 +8,12 @@ categories:
 - javascript
 tags:
 - javascript
-----
-
-# javascript 面向对象
+---
 
 
-最近在看[《javascript语言精粹》>](http://book.douban.com/subject/3590768/),书很薄，但是内容很精炼，一些内容仅仅看书还无法很好理解，需要查很多资料来补充。这里记录一下对javascript面向对象编程思想的一些整理，主要就是想弄清楚以下几个问题：
+
+最近在看[《javascript语言精粹》>](http://book.douban.com/subject/3590768/),书很薄，但是内容很精炼，一些内容仅仅看书还无法很好理解，需要查很多资料来补充。这里记录一下对javascript面向对象编程思想的一些整理，主要就是想弄清楚以下几个问题： 
+
 * javascript inheritance
 * javascript constructor
 * javascript prototype
