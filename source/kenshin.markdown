@@ -1,24 +1,12 @@
 
-## *Hi. This is  kenshin's space !*       ![kenshin](http://www.gravatar.com/avatar/89347aa0cb46804c294e6d57b5802e2c.png)
+## Hi. This is  kenshin's space !
 
 
-*My blog : [blog.kenshinx.me](http://blog.kenshinx.me)*  
+Blog : [blog.kenshinx.me](http://blog.kenshinx.me) 
 
+Email : kenshin.acs(at)gmail.com
 
-The ways follow me:
+About me : 
 
-* email :     kenshin.acs(at)gmail(dot)com  
-
-* msn/gtalk : kenshin.acs(at)gmail(dot)com  
-  
-* projects : 	  [github](https://github.com/kenshinx)
-
-* bookmarks : [delicious](http://delicious.com/kenshinx)
-
-* book & movie : 	  [douban](http://www.douban.com/people/kenshin.acs)
-
-* discussions :	[stackoverflow](http://stackoverflow.com/users/1650800/kenshin)
-
-* ggyy : 	  [weibo](http://weibo.com/kespace)
-
+<script src="http://about.me/embed/kenshinx?style="site"></script>
 
