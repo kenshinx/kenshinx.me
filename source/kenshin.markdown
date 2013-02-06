@@ -4,7 +4,7 @@
 
 Blog : [blog.kenshinx.me](http://blog.kenshinx.me) 
 
-Email : kenshin.acs(at)gmail.com
+Email : [kenshin.acs(at)gmail.com](mailto:kenshin.acs@gmail.com)
 
 About me : 
 
