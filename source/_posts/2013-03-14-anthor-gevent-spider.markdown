@@ -3,22 +3,22 @@ comments: true
 date: 2013-03-14 11:12:21
 layout: post
 slug: python gevent爬虫
-title: 又一个python gevent爬虫
+title: python gevent爬虫
 categories:
 - Python
 tags:
 - gevent
 - spider
 ---
-最近新写了一个爬虫，虽然google可以搜到一大堆爬虫，但大都太过简单，无法设置链接深度，最大并发数等常用爬虫规则。偶尔有一些能支持这些规则，但是感觉代码写的又不怎么样，与其维护这样的还不如自己写一个。因此花了几天时间又从新造了一个轮子。代码在这里： 
+最近新写了一个爬虫，虽然google可以搜到一大堆爬虫，但要不太过简单，无法设置链接深度，最大并发数等常用爬虫规则，要不像scrapy这样的又太重。因此花了几天时间又从新写了一个适合我们需求的爬虫。代码在这里： 
 [https://github.com/kenshinx/second-spider](https://github.com/kenshinx/second-spider) 
 
 
 ### 主要使用的库
 
-* 并发框架使用的[gevent](http://www.gevent.org/)
-* http库使用[requests](http://docs.python-requests.org/en/latest/)
-* html解析用的[pyquery](https://pypi.python.org/pypi/pyquery)
+* 并发框架： [gevent](http://www.gevent.org/)
+* http库： [requests](http://docs.python-requests.org/en/latest/)
+* html解析库： [pyquery](https://pypi.python.org/pypi/pyquery)
 
 ### 支持的爬虫规则
 
