@@ -33,7 +33,7 @@ tags:
 
 1. 继续添加一些规则，例如解析robots文件，可设置一些不爬的url等
 2. 对相似url进行识别，排重
-3. 对Ajax类url的爬取mar
+3. 对Ajax类url的爬取
 
 
 
