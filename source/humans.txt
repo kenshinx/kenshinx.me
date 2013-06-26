@@ -1,0 +1,15 @@
+/* TEAM */
+Master: kenshin
+Twitter: @kenshinx
+Contact: kenshin.acs[@]gmail.com
+Location: Bei Jing ,China
+
+
+/* THANKS */
+Thanks China, Thanks communist party. (black joke)
+
+
+/* SITE */
+Language: Chinese
+Standards: HTML5, CSS3,JavaScript
+Technology: Jekyll, Octopress
