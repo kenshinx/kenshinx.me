@@ -15,6 +15,5 @@ tags:
 这个文件没有什么具体的作用，主要是对网站和作者的介绍，让你的网站显得更有人味。  
 humans.txt官网有中文版本，有很详细的介绍: [我们是人，不是机器](http://humanstxt.org/ZH) 
 
-试了一下，发现[google](http://www.google.com/humans.txt), [github](https://github.com/humans.txt)还都有这个文件。
 随手给自己博客也加了一个[http://blog.kenshinx.me/humans.txt](http://blog.kenshinx.me/humans.txt)  :D
 
