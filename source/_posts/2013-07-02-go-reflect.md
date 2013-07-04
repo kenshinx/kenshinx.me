@@ -10,7 +10,6 @@ tags:
 - go,reflect
 ---
 
-========
 
 最近在看一些go语言标准库以及第三方库的源码时，发现go的reflect被大量使用，虽然反射的机制大多数语言都支持，但好像都没有go一样这么依赖反射的特性。个人觉得，reflect使用如此频繁的一个重要原因离不开go的另一个特性，空接口interface{},reflect配合空接口，让原本是静态类型的go具备了很多动态类型语言的特征。
 另外，虽然反射大大增加了go语言的灵活性，但要完全掌握它的原理和使用也还是有一点难度的。
@@ -89,6 +88,8 @@ type Type interface {
 ```
 
 可见reflect.Type是一个接口类型的对象，这个接口包含了很多方法，像`Name()`,`Field()`,`Method()`等，下面再通过实例来了解几个比较重要的方法。
+
+<!-- more -->
 
 ```
 type Foo struct {
@@ -211,9 +212,6 @@ const (
 	UnsafePointer
 )
 ```
-
-*Elem*
-
 
 -------
 ###  reflect.Value
