@@ -5,7 +5,7 @@ layout: post
 slug: go reflect
 title: go reflect
 categories:
-- Goma
+- Go
 tags:
 - go,reflect
 ---
