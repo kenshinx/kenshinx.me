@@ -101,7 +101,7 @@ tags:
 下面是一个更有指导意义的，setp by step 调优过程：
 
 
-[![](http://photo.yupoo.com/xiha211/CmM81iD2/medish.jpg)](http://photo.yupoo.com/xiha211/CmM81iD2/medish.jpg)
+[![](http://pic.yupoo.com/xiha211/CmM81iD2/qm0Nw.png)](http://pic.yupoo.com/xiha211/CmM81iD2/qm0Nw.png)
 	
 1. is hit rate acceptable  
 不知道到底怎么计算缓存命中率的，但是通过[tuning-primer.sh](http://www.day32.com/MySQL/tuning-primer.sh)可以看到我们的缓存命中率是75%，看起来还不错

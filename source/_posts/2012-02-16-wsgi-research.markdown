@@ -18,7 +18,7 @@ tags:
 wsgi是一个搞web开发的pythoner必须了解的内容，之前也零散的看过一些文章，但总感觉好多概念很模糊。这几天抽空又把相关内容好好整理了一下，把笔记贴出来，一些只言片语也许对某些正在研究这个的人有所帮助。  
 wsgi 是一个 web 组件的接口规范.，wsgi将 web 组件分为三类： web服务器,web中间件,web应用程序，下图来自[ibm developerworks](http://www.ibm.com/developerworks/cn/web/wa-wsgi/)，很好的说明了三者之间的关系。
 
-[![](http://photo.yupoo.com/xiha211/CmMaSs5G/medish.jpg)](http://photo.yupoo.com/xiha211/CmMaSs5G/medish.jpg)
+[![](http://pic.yupoo.com/xiha211/CmMaSs5G/medish.jpg)](http://pic.yupoo.com/xiha211/CmMaSs5G/medish.jpg)
 
 
 从上图可以看出来，wsgi基本处理模式为 ： WSGI Server -> (WSGI Middleware)*-> WSGI Application 。
@@ -33,7 +33,7 @@ wsgi server可以理解为一个符合wsgi规范的webserver，接收request请�
 
 <!-- more -->
 
-[![](http://photo.yupoo.com/xiha211/CmMc7d89/medish.jpg)](http://photo.yupoo.com/xiha211/CmMc7d89/medish.jpg)
+[![](http://pic.yupoo.com/xiha211/CmMc7d89/medish.jpg)](http://pic.yupoo.com/xiha211/CmMc7d89/medish.jpg)
 
 通过这个图可以看出来wsgi server 基本工作流程
 
