@@ -32,6 +32,8 @@ Type,Value分别对应对象的类型和值数据
 * reflect.ValueOf(i interface{}) Value  
   reflect.ValueIOf()返回值的类型就是reflect.Value
 
+
+
 ---------
 ### reflect.Type
 
@@ -39,6 +41,8 @@ Type,Value分别对应对象的类型和值数据
 
 因为reflect.Typeof的参数是空接口类型，因此可以接收任意类型的数据。
 TypeOf()的返回值是这个接口类型对应的reflect.Type对象。通过Type提供的一些方法，就可以获得这个接口实际的静态类型。
+
+<!-- more -->
 
 ```
 
@@ -90,7 +94,6 @@ type Type interface {
 
 可见reflect.Type是一个接口类型的对象，这个接口包含了很多方法，像`Name()`,`Field()`,`Method()`等，下面再通过实例来了解几个比较重要的方法。
 
-<!-- more -->
 
 ```
 type Foo struct {

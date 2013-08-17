@@ -72,6 +72,7 @@ supervisord是[celery官方](http://docs.celeryproject.org/en/latest/tutorials/d
 
 基本上就是官方那个配置文件，拿过来加上了[flower](https://github.com/mher/flower)的设置。
 
+<!-- more -->
 
 ### celerd.conf
 
