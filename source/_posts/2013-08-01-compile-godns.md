@@ -87,6 +87,22 @@ sudo nohup /usr/local/bin/godns -c /etc/godns &
 ```
 由于Go语言不能像C，C++一样实现Daemon,因此只能通过nohup的方式在后台运行。
 但是nohup的方式运行，管理起来不是很方便，要结束，重启进程还得自己写shell管理脚本。
-最好的部署还是通过supervisord这样的东西。
+最好的部署还是通过supervisord
+
+
+```
+
+[program:godns]
+command=/usr/local/bin/godns -c /etc/godns.conf
+autostart=true
+autorestart=true
+user=root
+stdout_logfile_maxbytes = 50MB
+stdoiut_logfile_backups = 20
+stdout_logfile = /var/log/godns.log
+
+```
+
+
 
 
