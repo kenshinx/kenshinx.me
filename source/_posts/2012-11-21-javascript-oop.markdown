@@ -31,12 +31,20 @@ var person = {
 	name:  "ken",
 	age:  29,
 	sayHi:  function(){
-		return "Hi "+this.name; 
+		console.log("Hi "+this.name); 
 	}, 
 };
-```
 
+p1 = new person();
+p1.sayHi(); // Hi ken
+```
 这个方式很简单，但是对象有很多属性和方法时，这么写就不是很好看。
+补充：ECMA5新增了一个`Object.create()`，如果是通过字面量创建对象实例，推荐这种方式：
+
+```
+p2 = Object.create(person);
+p2.sayHi(); // Hi ken
+```
 
 2.使用构造函数
 
