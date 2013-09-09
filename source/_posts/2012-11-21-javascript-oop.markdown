@@ -10,8 +10,8 @@ tags:
 - javascript
 ---
 
-讨论一门语言的面向对象特性，无非就是封装、继承、和多态的实现机制。而javascript不支持多态，就只剩下封装和继承了。
-封装可以理解成创建对象，并为对象添加属性和方法的过程，javascript的封装和继承都离不开两个重要概念：
+讨论一门语言的面向对象特性，无非就是封装、继承、和多态的实现机制。
+封装可以理解成创建对象，并为对象添加属性和方法的过程，javascript的封装、继承、多态都离不开两个重要概念：
 
 * constructor 构造函数
 * prototype 原型对象
@@ -324,6 +324,51 @@ console.log(b.foods);  //[]，看来也没有了第一种方式的bug了。
 YUI的YAHOO.lang.extend()使用的就是这种方式，也是被认为最好的方式。这种继承方式的细节看阮一峰的文章吧，写的很清楚。
 
 吐槽：一个最基本的继承，javascript硬是搞得这么复杂，还得靠一堆奇技淫巧才能完整实现，实在是太弱了。
+
+## 多态：
+实现多态的机制通常有两种：覆盖和重载  
+javascript没有函数签名，又是弱类型语言，无法实现重载，只能通过覆盖的方式来实现多态。下面是一个覆盖实现多态的例子：
+
+```
+function Person(){
+	this.sayHi = function(){
+		return "Hi man"; 
+	}
+};
+
+function Chinese(){
+	this.country = "China";	
+}
+
+Chinese.prototype = new Person();
+Chinese.prototype.constructor =Chinese;
+
+
+Chinese.prototype.sayHi = function(){
+    console.log("Ni hao zhongguo");
+}
+
+function American(){
+    this.country = "USA";
+}
+
+American.prototype = new Person();
+American.prototype.constructor =American;
+
+
+American.prototype.sayHi = function(){
+    console.log("Hello USA");
+}
+
+P = new Person();
+c = new Chinese();
+a = new American();
+
+p.sayHi();  //Hi man
+c.sayHi();  //Ni hao zhongguo
+a.sayHi();  //Hello USA
+
+```
 
 
 
