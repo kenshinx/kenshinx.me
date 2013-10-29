@@ -6,7 +6,7 @@ slug: xss%e7%a0%94%e7%a9%b6
 title: xss介绍
 wordpress_id: 180
 categories:
-- secure
+- Secure
 tags:
 - web安全
 - xss

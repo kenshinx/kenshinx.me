@@ -5,7 +5,7 @@ layout: post
 slug: javascript面向对象
 title: javascript面向对象
 categories:
-- javascript
+- Javascript
 tags:
 - javascript
 ---

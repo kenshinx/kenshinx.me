@@ -40,6 +40,8 @@ require "oldmodule"
 oldmodule.foo()
 ```
 
+<!-- more -->
+
 1. `module()` 第一个参数就是模块名，如果不设置，缺省使用文件名。
 2. 第二个参数package.seeall,默认在定义了一个`module()`之后，前面定义的全局变量就都不可用了，包括print函数等，如果要让之前的全局变量可见，必须在定义module的时候加上参数package.seeall。
    具体参考云风这篇[文章](http://blog.codingnow.com/2006/02/lua_51_module.html)

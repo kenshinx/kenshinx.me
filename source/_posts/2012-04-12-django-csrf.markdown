@@ -6,7 +6,7 @@ slug: django-csrf%e9%98%b2%e6%8a%a4%e5%8e%9f%e7%90%86
 title: django csrf防护原理
 wordpress_id: 262
 categories:
-- secure
+- Secure
 tags:
 - csrf
 - django
