@@ -33,6 +33,7 @@ $ sudo ln -s  /usr/local/bin/go /usr/bin/goma
 
 ```
 
+
 2.设置环境变量
 
 
@@ -53,7 +54,7 @@ export GOBIN GOROOT GOPATH
 
 设置完成后，运行go env， 看设置是否都生效
 
-
+<!-- more -->
 
 3.部署代码
 
