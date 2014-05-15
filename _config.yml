@@ -86,8 +86,8 @@ pinboard_user:
 pinboard_count: 3
 
 # Delicious
-delicious_user: kenshinx
-delicious_count: 4
+delicious_user: 
+delicious_count: 
 
 # Disqus Comments
 disqus_short_name: kenshinx
