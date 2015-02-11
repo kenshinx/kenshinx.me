@@ -29,7 +29,7 @@ $ sudo mv go /usr/local/go
 
 $ sudo cp /usr/local/go/bin/*  /usr/local/bin 
 
-$ sudo ln -s  /usr/local/bin/go /usr/bin/goma
+$ sudo ln -s  /usr/local/bin/go /usr/bin/go
 
 ```
 
@@ -74,7 +74,7 @@ $ go build -o godns *.go
 
 ```
 sudo cp godns /usr/local/bin/ && sudo chown root:root /usr/local/bin/godns
-sudo godns.conf /etc/godns.conf  && sudo chown root:root /etc/godns.conf
+sudo cp godns.conf /etc/godns.conf  && sudo chown root:root /etc/godns.conf
 ```
 
 因为要绑定53端口，因此要以root权限运行。
@@ -86,9 +86,9 @@ sudo godns.conf /etc/godns.conf  && sudo chown root:root /etc/godns.conf
 sudo nohup /usr/local/bin/godns -c /etc/godns &
 
 ```
-由于Go语言不能像C，C++一样实现Daemon,因此只能通过nohup的方式在后台运行。
+由于Go语言不能像C，C++一样通过fork的方式实现Daemon进程,因此只能通过nohup的方式在后台运行。
 但是nohup的方式运行，管理起来不是很方便，要结束，重启进程还得自己写shell管理脚本。
-最好的部署还是通过supervisord
+最好的daemonize方式是通过一些外部工具, 例如supervisord，下面是一个supervisor的配置示例。
 
 
 ```
